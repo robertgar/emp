@@ -1,0 +1,48 @@
+<!--<div class="b-header-top">-->
+  <!--<div class="container">-->
+    <!--<div class="b-languages">-->
+      <!--<ng-template ngFor let-lang [ngForOf]="languages">-->
+          <!--<span class="b-language" *ngIf="lang.code !== localeId">-->
+            <!--<a href="/{{lang.code}}/">{{lang.label}}</a>-->
+          <!--</span>-->
+        <!--<span class="b-language" *ngIf="lang.code === localeId">{{lang.label}}</span>-->
+      <!--</ng-template>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<header class="b-header">
+  <div class="container">
+    <nav class="navbar is-transparent is-spaced">
+      <div class="navbar-brand">
+        <a class="navbar-item" routerLink="/">
+          <img src="/assets/logo.png" alt="Funding">
+          <span class="b-app__name">Funding</span>
+        </a>
+        <div class="navbar-burger burger" data-target="top-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="top-menu" class="navbar-menu">
+        <div class="navbar-start">
+
+        </div>
+        <div class="navbar-end">
+
+          <a class="navbar-item" (click)="handleLogin($event)">
+            <span i18n="@@Login|This is the label for login">Login</span>
+          </a>
+
+          <!--<a class="navbar-item" (click)="logout()" *ngIf="authService.isLoggedIn()">-->
+            <!--<span>Logout</span>-->
+          <!--</a>-->
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
